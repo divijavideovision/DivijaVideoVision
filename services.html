@@ -17,7 +17,7 @@
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
@@ -39,21 +39,26 @@
 
         #services h2 {
             color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
         #services ul {
             list-style-type: none;
             padding-left: 0;
+            font-size: 18px;
         }
 
         #services ul li {
-            font-size: 16px;
-            margin: 10px 0;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
         }
 
         #services ul li::before {
             content: "✔️";
             margin-right: 10px;
+            color: #4CAF50; /* Matching color with header */
         }
 
         footer {
@@ -64,6 +69,17 @@
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            #services h2 {
+                font-size: 20px;
+            }
+
+            #services ul li {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
@@ -77,7 +93,7 @@
         </h1>
     </header>
 
-    <!-- Updated Services Section -->
+    <!-- Our Services Section -->
     <section id="services">
         <h2>Our Services</h2>
         <ul>
