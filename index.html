@@ -7,9 +7,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Divija Video Vision</title>
     <!-- Link to CSS stylesheet for better visual design -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Add a favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        /* General Reset and Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        /* Header - Aligning navigation to the right */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+        }
+
+        .logo {
+            width: 150px;
+            display: inline-block;
+        }
+
+        nav ul.right-nav {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul.right-nav li {
+            margin-left: 20px;
+        }
+
+        nav ul.right-nav li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Hero Section - Centering the content */
+        .hero {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        .hero-logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Footer - Styling the social links */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .social-links {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer .social-links li {
+            margin: 0 10px;
+        }
+
+        footer .social-links li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -18,7 +116,7 @@
         <div class="container">
             <img src="images/logo.png" alt="Divija Video Vision Logo" class="logo">
             <nav>
-                <ul>
+                <ul class="right-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -31,6 +129,7 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
+            <img src="images/logo.png" alt="Divija Video Vision Logo" class="hero-logo">
             <h1>Welcome to Divija Video Vision</h1>
             <h2>High-Quality LED Wall Services for Every Event</h2>
             <p>We provide professional LED wall setups for weddings, corporate events, and more.</p>
@@ -43,9 +142,7 @@
         <div class="container">
             <p>&copy; 2025 Divija Video Vision. All Rights Reserved.</p>
             <ul class="social-links">
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://instagram.com/divija_video" target="_blank">Instagram</a></li>
             </ul>
         </div>
     </footer>
