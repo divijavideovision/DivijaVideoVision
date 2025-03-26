@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Divija Video Vision</title>
-    <!-- Link to CSS stylesheet for better visual design -->
+    <!-- Link to Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         /* General Reset and Body Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #f9f9f9;
         }
 
         .container {
@@ -21,10 +23,11 @@
             margin: 0 auto;
         }
 
-        /* Header - Aligning navigation to the right */
+        /* Header Section Styling */
         header {
             background-color: #333;
             padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
@@ -40,54 +43,96 @@
         }
 
         nav ul.right-nav li {
-            margin-left: 20px;
+            margin-left: 30px;
         }
 
         nav ul.right-nav li a {
             text-decoration: none;
             color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
         }
 
-        /* Hero Section - Centering the content */
+        nav ul.right-nav li a:hover {
+            color: #ff9900;
+        }
+
+        /* Hero Section */
         .hero {
             text-align: center;
-            padding: 50px 0;
-            background-color: #f4f4f4;
+            padding: 80px 0;
+            background-image: url('images/hero-bg.jpg'); /* Replace with a high-quality image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 1;
         }
 
         .hero-logo {
-            width: 150px;
+            width: 120px;
             margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 600;
         }
 
         .hero h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 400;
         }
 
         .hero p {
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 30px;
+            font-weight: 300;
         }
 
         .hero .btn {
             background-color: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 20px;
+            display: inline-block;
         }
 
-        /* Footer - Styling the social links */
+        .hero .btn:hover {
+            background-color: #ff9900;
+            transform: scale(1.05);
+        }
+
+        .hero .pricing-btn {
+            background-color: #ff9900;
+            color: #333;
+        }
+
+        /* Footer Section */
         footer {
             background-color: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 40px 0;
             text-align: center;
         }
 
@@ -96,17 +141,47 @@
             padding: 0;
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
 
         footer .social-links li {
-            margin: 0 10px;
+            margin: 0 15px;
         }
 
         footer .social-links li a {
             text-decoration: none;
             color: #fff;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
         }
 
+        footer .social-links li a:hover {
+            color: #ff9900;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul.right-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.4rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .btn {
+                padding: 12px 25px;
+            }
+        }
     </style>
 </head>
 
@@ -128,12 +203,14 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-overlay"></div>
         <div class="container">
             <img src="images/logo.png" alt="Divija Video Vision Logo" class="hero-logo">
             <h1>Welcome to Divija Video Vision</h1>
             <h2>High-Quality LED Wall Services for Every Event</h2>
             <p>We provide professional LED wall setups for weddings, corporate events, and more.</p>
             <a href="services.html" class="btn">View Services</a>
+            <a href="pricing.html" class="btn pricing-btn">View Pricing</a>
         </div>
     </section>
 
@@ -143,6 +220,7 @@
             <p>&copy; 2025 Divija Video Vision. All Rights Reserved.</p>
             <ul class="social-links">
                 <li><a href="https://instagram.com/divija_video" target="_blank">Instagram</a></li>
+                <!-- Add more social links as needed -->
             </ul>
         </div>
     </footer>
