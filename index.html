@@ -15,7 +15,8 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Light Gray */
+            color: #333333; /* Dark Gray Text */
         }
 
         .container {
@@ -25,7 +26,7 @@
 
         /* Header Section Styling */
         header {
-            background-color: #333;
+            background-color: #2A3D6D; /* Dark Blue */
             padding: 15px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -48,14 +49,14 @@
 
         nav ul.right-nav li a {
             text-decoration: none;
-            color: #fff;
+            color: #fff; /* White text */
             font-size: 1rem;
             font-weight: 500;
             transition: all 0.3s ease;
         }
 
         nav ul.right-nav li a:hover {
-            color: #ff9900;
+            color: #FF9900; /* Light Orange on Hover */
         }
 
         /* Hero Section */
@@ -93,23 +94,26 @@
             margin-bottom: 20px;
             font-weight: 700;
             text-transform: uppercase;
+            color: #FF9900; /* Light Orange */
         }
 
         .hero h2 {
             font-size: 2rem;
             margin-bottom: 25px;
             font-weight: 400;
+            color: #fff;
         }
 
         .hero p {
             font-size: 1.2rem;
             margin-bottom: 40px;
             font-weight: 300;
+            color: #fff;
         }
 
         /* Footer Section */
         footer {
-            background-color: #333;
+            background-color: #2A3D6D; /* Dark Blue */
             color: #fff;
             padding: 60px 0;
             text-align: center;
@@ -135,7 +139,7 @@
         }
 
         footer .social-links li a:hover {
-            color: #ff9900;
+            color: #FF9900; /* Light Orange */
         }
 
         /* Responsive Design */
@@ -156,6 +160,21 @@
             .hero p {
                 font-size: 1rem;
             }
+        }
+
+        /* Call-to-Action Button Styling */
+        .cta-button {
+            background-color: #FF9900; /* Light Orange */
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #FFB84D; /* Lighter Orange */
         }
     </style>
 </head>
@@ -184,6 +203,7 @@
             <h1>Welcome to Divija Video Vision</h1>
             <h2>Premium LED Wall Services for Every Event</h2>
             <p>Specializing in high-quality LED wall setups for weddings, corporate events, and more. Elevate your experience with our professional solutions.</p>
+            <a href="services.html" class="cta-button">Explore Our Services</a> <!-- Added CTA Button -->
         </div>
     </section>
 
