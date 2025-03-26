@@ -4,20 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Divija Video Vision</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        #contact {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #contact h2 {
+            color: #333;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .phone {
+            color: blue; /* Phone number in blue */
+        }
+
+        .location {
+            color: green; /* Location in green */
+        }
+
+        .email {
+            color: purple; /* Email in purple */
+        }
+
+        .email a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Contact Us</h1>
     </header>
-    <section>
-        <p>
-            <span style="color:blue;">For bookings and inquiries, call us at:</span> <strong><span style="color:blue;">+91 9822620932</span></strong>
-        </p>
-        <p>
-            <span style="color:blue;">Email: divijavision@gmail.com</span>
-        </p>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p class="contact-info phone">📞 Call us: <strong>+91 9822620932</strong></p>
+        <p class="contact-info location">📍 Location: Mumbai, India</p>
+        <p class="contact-info email">📧 Email: <a href="mailto:divijavision@email.com">divijavision@email.com</a></p>
     </section>
+
     <footer>
         <p>&copy; 2025 Divija Video Vision</p>
     </footer>
